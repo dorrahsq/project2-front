@@ -1,0 +1,151 @@
+.bio {
+  margin-top: 15px;
+  margin-left: 33px;
+  margin-bottom: 15px;
+}
+
+.borderImg {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+
+  margin-left: 42.99%;
+}
+.othersImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  /* margin-top: 100px;
+  width: 200px;
+  border-radius: 25%; */
+}
+.contenerImg {
+  text-align: center;
+}
+
+.name {
+  margin-top: -10px;
+  color: rgb(46, 46, 46);
+}
+
+.imgesC {
+  display: inline-block;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.imggg {
+  width: 250px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+.newPostBtn {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.NewPostModel {
+  align-items: center;
+  text-align: center;
+}
+
+.toggleBtn {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.noPosted {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Dosis", sans-serif;
+}
+/* .modal{
+  font-family: "Dosis", sans-serif;
+
+} */
+.box {
+  border-radius: 10px;
+}
+.fkoe {
+  color: black;
+  margin-left: 175px;
+  margin-bottom: 20px;
+}
+
+.newPostText {
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+}
+.newPostInput {
+  display: block;
+  margin: 0px 0px 0px 50px;
+  width: 300px;
+  border-style: none;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 3px;
+  font-family: "Dosis", sans-serif;
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.editeImg {
+  opacity: 0;
+  font-size: 40px;
+  position: absolute;
+  /* top: 158px; */
+  top: -206px;
+  right: -570%;
+  font-weight: 100;
+  color: black;
+  z-index: 2;
+  padding: 80px;
+  border-radius: 25%;
+  background-color: rgba(128, 128, 128, 0.342);
+}
+
+.editeImg:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.editBioIcno {
+  opacity: 0;
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  z-index: 2;
+  /* background-color: rgba(128, 128, 128, 0.342); */
+}
+
+.editBioIcno:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.inputBio {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-style: none;
+  padding: 5px;
+  font-size: 21px;
+  width: 300px;
+  border-radius: 3px;
+  font-family: "Dosis", sans-serif;
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.bioBtn {
+  border-style: none;
+  background-color: black;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 7px;
+  font-size: 20px;
+  transition: 0.5s ease;
+  font-family: "Dosis", sans-serif;
+  margin-left: 2px;
+}
+.bioBtn:hover {
+  cursor: pointer;
+}

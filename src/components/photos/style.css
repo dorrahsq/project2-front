@@ -1,0 +1,12 @@
+.photosContener {
+  margin: 20px 20px;
+}
+
+.photo:hover {
+  cursor: pointer;
+  transform: scale(1.02) perspective(1px);
+}
+
+.photo {
+  transition: 0.8s ease;
+}

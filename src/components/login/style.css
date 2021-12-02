@@ -1,0 +1,61 @@
+.videoBG {
+  width: 100vw;
+  /* height: 100vh; */
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.describeItem {
+  font-family: "Dosis", sans-serif;
+  font-size: 50px;
+}
+.Logg {
+  display: block;
+  margin-left: 150px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.describeItem input {
+  display: block;
+  margin: 10px 0px 5px 70px;
+  border-style: none;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 3px;
+  font-family: "Dosis", sans-serif;
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.LogBtn {
+  margin-top: 3%;
+  color: rgb(255, 255, 255);
+  padding: 6px 20px;
+  border-radius: 7px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  transition: 0.5s ease;
+  background: rgba(255, 255, 255, 0);
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+.LogBtn:hover {
+  cursor: pointer;
+  transform: scale(1.25) perspective(1px);
+}
+
+.goIcon {
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+}
+.mesageL {
+  font-size: 25px;
+}

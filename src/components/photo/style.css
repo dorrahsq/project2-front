@@ -1,0 +1,121 @@
+.photoContener {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.photoContener img {
+  width: 750px;
+}
+
+.heartBtn {
+  font-size: 35px;
+  border-style: none;
+  background-color: white;
+  margin-right: 5px;
+  margin-left: 350px;
+  transition: 0.5s ease;
+}
+.heartBtn:hover {
+  transform: scale(1.2) perspective(1px);
+}
+
+.count {
+  font-size: 27px;
+  position: absolute;
+}
+
+.left {
+  text-align: left;
+}
+
+.postedBy {
+  text-align: left;
+  margin-left: 27%;
+  margin-bottom: 13px;
+  margin-top: 2.5%;
+}
+
+.postedBy:hover {
+  cursor: pointer;
+}
+
+.imgg {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 11.6%;
+  left: 24.2%;
+  border-radius: 50%;
+}
+
+.date {
+  margin-left: 610px;
+  color: rgba(128, 128, 128, 0.644);
+  display: inline-block;
+  position: absolute;
+  font-family:monospace;
+  font-size: 18px;
+}
+
+.username {
+  font-weight: bold;
+}
+.username:hover {
+  cursor: pointer;
+}
+
+.prgg {
+  text-align: left;
+  margin-left: 350px;
+  margin-bottom: 10px;
+}
+
+.hashh {
+  margin-left: 3px;
+}
+
+/* .clickDown {
+  margin-left: 420px;
+  background-color: rgba(204, 203, 203, 0.192);
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+} */
+
+/* .clickDown:hover {
+  color: rgba(70, 27, 50, 0.952);
+} */
+
+.deleteBtnContener {
+  text-align: left;
+  margin-left: 350px;
+}
+
+.deleteBtn {
+  border-style: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+}
+
+
+.downloadIcno{
+  opacity: 0;
+  font-size: 40px;
+  position: absolute;
+  top: 140px;
+  right: 350px;
+  font-weight: 100;
+  z-index: 2;
+  padding-left: 700px;
+  padding-bottom: 450px;
+  /* background-color: rgba(128, 128, 128, 0.055); */
+}
+
+.downloadIcno:hover  {
+ opacity: 1;
+}

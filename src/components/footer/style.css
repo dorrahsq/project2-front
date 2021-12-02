@@ -1,0 +1,32 @@
+.footers ul li {
+  display: inline-block;
+  margin: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footers {
+  background-color: FFFFFF;
+  padding: 0rem 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.footers ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#lastLifooter {
+  padding-left: 50px;
+  border-left: 1.8px solid rgba(128, 128, 128, 0.596);
+}
+#secondLiFooter {
+  padding-left: 50px;
+  border-left: 1.8px solid rgba(128, 128, 128, 0.596);
+}
