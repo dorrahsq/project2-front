@@ -6,7 +6,7 @@ import "./style.css";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://project2back.herokuapp.com";
 
 const OtherProfile = () => {
   let navigate = useNavigate();

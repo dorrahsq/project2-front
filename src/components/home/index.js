@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://project2back.herokuapp.com";
 
 const Home = () => {
   let navigate = useNavigate();

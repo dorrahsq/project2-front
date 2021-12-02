@@ -5,7 +5,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import "./style.css";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://project2back.herokuapp.com";
 
 const Likes = () => {
   let navigate = useNavigate();

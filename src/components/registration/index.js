@@ -4,7 +4,7 @@ import axios from "axios";
 import "./style.css";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://project2back.herokuapp.com";
 
 const SignUp = () => {
   const [users, setusers] = useState([]);

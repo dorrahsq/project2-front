@@ -30,7 +30,7 @@ const style = {
   p: 4,
 };
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://project2back.herokuapp.com";
 
 const Input = styled("input")({
   display: "none",
