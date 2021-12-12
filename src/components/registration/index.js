@@ -8,6 +8,7 @@ const BASE_URL = "https://project2back.herokuapp.com";
 
 const SignUp = () => {
   const [users, setusers] = useState([]);
+  // eslint-disable-next-line
   const [user, setUser] = useState([]);
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -41,7 +42,7 @@ const SignUp = () => {
     <>
       {/* <img className="videoBG" src="https://images.pexels.com/photos/947785/pexels-photo-947785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/> */}
       <img
-        className="videoBG"
+        className="videoBG" alt="img"
         src="https://images.pexels.com/photos/4397899/pexels-photo-4397899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       />
 
@@ -74,6 +75,7 @@ const SignUp = () => {
             className="LogBtn"
             onClick={() => {
               let found = users.find((ele) => {
+                // eslint-disable-next-line
                 return ele.email == email;
               });
               if (found) {

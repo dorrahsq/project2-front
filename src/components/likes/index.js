@@ -36,7 +36,7 @@ const Likes = () => {
           <ImageList variant="masonry" cols={3} gap={10}>
             {userLikes.map((item) => (
               <ImageListItem key={item.onPost.img}>
-                <img
+                <img alt="img"
                   onClick={() => {
                     goInside(item.onPost._id);
                   }}

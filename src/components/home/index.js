@@ -12,27 +12,30 @@ const Home = () => {
   let navigate = useNavigate();
   const [posts, setPost] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
+  // eslint-disable-next-line
   const [maxx, setMaxx] = useState();
+  // eslint-disable-next-line
   const [moreLikesPostt, setMoreLikesPostt] = useState("");
   const [onePost, setOnePost] = useState();
   useEffect(() => {
     getAllPosts();
     getAllPostss();
+    // eslint-disable-next-line
   }, []);
 
   const getAllPostss = async () => {
     const postss = await axios.get(`${BASE_URL}/posts/`);
     setAllPosts(postss.data);
     const onePost = postss.data.find((ele) => {
+      // eslint-disable-next-line
       return ele._id == "61a1d58d1beb96e90894030e";
     });
-    console.log(onePost);
     setOnePost(onePost);
   };
 
   const getAllPosts = async () => {
     const posts = await axios.get(`${BASE_URL}/posts/hash?hashtags=pink`);
-
+// eslint-disable-next-line
     posts.data.map((ele) => {
       countLike(ele);
     });
@@ -75,19 +78,19 @@ const Home = () => {
           >
             {allPosts.map((ele) => {
               return (
-                <div>
-                  <img className="bgDivImg" src={ele.img} />
+                <div key={ele._id}>
+                  <img alt="img" className="bgDivImg" src={ele.img} />
                 </div>
               );
             })}
             <div>
-              <img
+              <img alt="img"
                 className="bgDivImg"
                 src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               />
             </div>
             <div>
-              <img
+              <img alt="img"
                 className="bgDivImg"
                 src="https://images.pexels.com/photos/9373483/pexels-photo-9373483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               />
@@ -112,7 +115,7 @@ const Home = () => {
       <div className="lineInBack"></div>
       {posts ? (
         <>
-          <div class="line"></div>
+          <div className="line"></div>
           <Fade>
             <div className="winner">
               <i>
@@ -123,7 +126,7 @@ const Home = () => {
           {/* <Fade> */}
 
           <div className="bg">
-            <span class="whySpan"> Most liked photo </span>
+            <span className="whySpan"> Most liked photo </span>
             <Fade>
               <span className="why">
                 We selected this post based on the most likes according to the
@@ -135,7 +138,7 @@ const Home = () => {
           </div>
           <Fade>
             <div className="imgContener">
-              <img
+              <img alt="img"
                 src={posts.img}
                 onClick={() => {
                   goInside(posts._id);
@@ -147,7 +150,7 @@ const Home = () => {
           {onePost && (
             <>
               <div className="bg2">
-                <span class="whySpan2"> Professional choice </span>
+                <span className="whySpan2"> Professional choice </span>
                 <Fade>
                   <span className="why2">
                     green is restful and calming, while pink is soft and dreamy,
@@ -161,7 +164,7 @@ const Home = () => {
               </div>
               <Fade>
                 <div className="imgContener2">
-                  <img
+                  <img alt="img"
                     src={onePost.img}
                     onClick={() => {
                       goInside(onePost._id);

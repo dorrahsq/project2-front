@@ -14,6 +14,7 @@ const UseStorage = (props) => {
       const URL = await storageRef.getDownloadURL();
       setUrl(URL);
     });
+    // eslint-disable-next-line
   }, []);
   const postIt = () => {
     const obj = {

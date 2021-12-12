@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./style.css";
 import { IoHeartSharp, IoHeartOutline } from "react-icons/io5";
-import { saveAs } from "file-saver";
 import { GrInstallOption } from "react-icons/gr";
 
 const BASE_URL = "https://project2back.herokuapp.com";
@@ -19,11 +18,14 @@ const Photo = () => {
 
   useEffect(() => {
     getAllPosts();
+    // eslint-disable-next-line
   }, []);
 
   const getAllPosts = async () => {
     const posts = await axios.get(`${BASE_URL}/posts/`);
+    // eslint-disable-next-line
     setPhoto(posts.data.find((ele) => ele._id == id));
+    // eslint-disable-next-line
     const onPostt = posts.data.find((ele) => ele._id == id);
     const onPost = onPostt._id;
 
@@ -41,7 +43,7 @@ const Photo = () => {
     setuserid(userId);
 
     const elm = likes.data.find(
-      (ele) => ele.by == userId && ele.onPost == onPost
+      (ele) => ele.by === userId && ele.onPost === onPost
     );
 
     setFound(elm);
@@ -102,17 +104,11 @@ const Photo = () => {
     navigate(`/profile`);
   };
 
-  const downloadImage = (url) => {
-    saveAs(url, "image.jpg"); // Put your image url here.
-  };
-
   return (
     <>
       {photo ? (
         <>
-        
-        <img className="imgg" src={photo.postedBy.img} />
-
+          <img className="imgg" alt="img" src={photo.postedBy.img} />
           <div className="photoContener">
             <p className="postedBy">
               <span
@@ -129,7 +125,8 @@ const Photo = () => {
                   //   downloadImage(photo.img);
                   // }}
                 >
-                  <a
+{                  // eslint-disable-next-line
+}                  <a
                     href={photo.img}
                     target="_blank"
                     download
@@ -171,8 +168,8 @@ const Photo = () => {
                 console.log("g")
               )}
             </p>
-
-            {userid == photo.postedBy._id ? (
+{            // eslint-disable-next-line
+}            {userid == photo.postedBy._id ? (
               <div className="deleteBtnContener">
                 <button
                   onClick={() => {

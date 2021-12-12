@@ -40,7 +40,7 @@ const Profile = () => {
   let navigate = useNavigate();
 
   const [userLikes, setUserLikes] = useState();
-
+// eslint-disable-next-line
   const [users, setusers] = useState([]);
   const [userProfile, setUserProfile] = useState();
   const [userPostss, setUserPostss] = useState([]);
@@ -64,6 +64,7 @@ const Profile = () => {
     const allusers = await axios.get(`${BASE_URL}/users/`);
     setusers(allusers.data);
     let userid = JSON.parse(localStorage.getItem("userId"));
+    // eslint-disable-next-line
     setUserProfile(allusers.data.find((ele) => ele._id == userid));
 
     const userPosts = await axios.get(
@@ -116,7 +117,6 @@ const Profile = () => {
       .catch((err) => {
         console.error(err);
       });
-    console.log(userProfile._id);
     window.location.reload(false);
   };
   return (
@@ -126,7 +126,8 @@ const Profile = () => {
           <>
             <div className="contenerImg">
               <div className="borderImg">
-                <img className="othersImg" src={userProfile.img} />
+{              // eslint-disable-next-line
+}                <img className="othersImg" src={userProfile.img} />
               </div>
 
               <label htmlFor="icon-button-filee">
@@ -293,14 +294,15 @@ const Profile = () => {
       </div>
 
       <div>
-        {userPostss && alignment == "posts" ? (
+        
+        {userPostss && alignment === "posts" ? (
           <>
             {userPostss.length ? (
               <div className="allImg">
                 <ImageList variant="masonry" cols={3} gap={10}>
                   {userPostss.map((item) => (
                     <ImageListItem key={item.img}>
-                      <img
+                      <img alt="img"
                         onClick={() => {
                           goInside(item._id);
                         }}
@@ -324,15 +326,14 @@ const Profile = () => {
       </div>
 
       <div>
-        {userLikes && alignment == "likes" ? (
+        {userLikes && alignment === "likes" ? (
           <>
             {userLikes.length ? (
               <div className="allImg">
-                {console.log(userLikes)}
                 <ImageList variant="masonry" cols={3} gap={10}>
                   {userLikes.map((item) => (
                     <ImageListItem key={item.onPost.img}>
-                      <img
+                      <img alt="img"
                         onClick={() => {
                           goInside(item.onPost._id);
                         }}

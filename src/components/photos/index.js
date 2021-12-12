@@ -4,7 +4,6 @@ import "./style.css";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { useNavigate } from "react-router-dom";
-import Search from "../search";
 
 const BASE_URL = "https://project2back.herokuapp.com";
 
@@ -32,7 +31,7 @@ const Photos = () => {
         <ImageList variant="masonry" cols={5} gap={10}>
           {posts.map((item) => (
             <ImageListItem key={item.img}>
-              <img
+              <img alt="img"
                 onClick={() => {
                   goInside(item._id);
                 }}

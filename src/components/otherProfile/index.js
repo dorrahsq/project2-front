@@ -17,10 +17,12 @@ const OtherProfile = () => {
 
   useEffect(() => {
     getAllUsers();
+    // eslint-disable-next-line
   }, []);
 
   const getAllUsers = async () => {
     const users = await axios.get(`${BASE_URL}/users/`);
+    // eslint-disable-next-line
     setuser(users.data.find((ele) => ele._id == id));
 
     const userPosts = await axios.get(
@@ -40,7 +42,7 @@ const OtherProfile = () => {
           <>
             <div className="contenerImg">
               <div className="borderImg">
-                <img className="othersImg" src={user.img} />
+                <img alt="img" className="othersImg" src={user.img} />
               </div>
               <h3 className="name2"> {user.username} </h3>
               <p className="bio2">{user.Bio}</p>
@@ -59,7 +61,7 @@ const OtherProfile = () => {
                 <ImageList variant="masonry" cols={3} gap={11}>
                   {userPostss.map((item) => (
                     <ImageListItem key={item.img}>
-                      <img
+                      <img alt="img"
                         onClick={() => {
                           goInside(item._id);
                         }}

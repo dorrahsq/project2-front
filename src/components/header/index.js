@@ -1,8 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./style.css";
-import { BsHeartFill } from "react-icons/bs";
-import logoo from "../../imges/logoo.jpeg";
 import { AiOutlineLogout } from "react-icons/ai";
 import { SiGooglephotos } from "react-icons/si";
 const Header = () => {

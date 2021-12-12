@@ -25,7 +25,7 @@ const Login = () => {
 
   return (
     <>
-      <img
+      <img alt="img"
         className="videoBG"
         src="https://images.pexels.com/photos/4397899/pexels-photo-4397899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       />
@@ -49,6 +49,7 @@ const Login = () => {
           className="LogBtn"
           onClick={() => {
             let found = users.find((ele) => {
+              // eslint-disable-next-line
               return ele.email == email && ele.password == password;
             });
             if (found) {

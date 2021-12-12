@@ -14,6 +14,7 @@ const UseStorageProfile = (props) => {
       const URL = await storageRef.getDownloadURL();
       setUrl(URL);
     });
+    // eslint-disable-next-line
   }, []);
 
   const changeProfile = () => {
