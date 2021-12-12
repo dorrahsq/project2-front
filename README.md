@@ -1,6 +1,6 @@
 
 # Frame it
-An online photo-sharing website created with MongoDB, Express, and React.
+An online photo-sharing website created with MongoDB, Express, and React - [Take a look](https://frameit-website.netlify.app/).
 
 ----
 
