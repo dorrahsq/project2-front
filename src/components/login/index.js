@@ -5,7 +5,7 @@ import "./style.css";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 // import video from "../../imges/video.mp4"
-const BASE_URL = "https://project2back.herokuapp.com";
+const BASE_URL = "http://localhost:5500";
 
 const Login = () => {
   let navigate = useNavigate();

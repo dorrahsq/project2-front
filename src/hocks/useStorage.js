@@ -3,7 +3,7 @@ import { porjectSto } from "../components/firebase/config";
 import axios from "axios";
 import "./style.css";
 
-const BASE_URL = "https://project2back.herokuapp.com";
+const BASE_URL = "http://localhost:5500";
 
 const UseStorage = (props) => {
   const [url, setUrl] = useState(null);

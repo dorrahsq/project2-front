@@ -5,7 +5,7 @@ import "./style.css";
 import { IoHeartSharp, IoHeartOutline } from "react-icons/io5";
 import { GrInstallOption } from "react-icons/gr";
 
-const BASE_URL = "https://project2back.herokuapp.com";
+const BASE_URL = "http://localhost:5500";
 
 const Photo = () => {
   let navigate = useNavigate();

@@ -14,6 +14,10 @@ import Photo from "./components/photo";
 import Photos from "./components/photos";
 import Profile from "./components/profile";
 import SignUp from "./components/registration";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 function App() {
   let userId = JSON.parse(localStorage.getItem("userId"));

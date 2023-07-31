@@ -1,31 +1,40 @@
-.main {
-  margin-top: 200px;
-  margin-left: 100px;
-  margin-right: 650px;
-  /* margin-bottom: 500px; */
+.home-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  letter-spacing: 5px;
+  margin: 6rem;
+}
+
+.carousel-container {
+  width: 530px;
+  position: relative;
+}
+
+.home-text-container {
+  width: 30rem;
+  margin-top: 11rem;
+}
+
+.home-text-container div:first-child {
   font-size: 100px;
-  /* font-family: cursive; */
-
-  /* font-family: 'Roboto Condensed', sans-serif; */
   font-family: "Bangers", cursive;
-
   font-weight: lighter;
 }
 
-.shared {
-  margin-left: 100px;
+.home-text-container div:nth-child(2) {
   font-size: 40px;
   font-family: "Acme", sans-serif;
-
-  /* margin-bottom: 50px; */
-}
-.exploreDiv {
-  margin: 20px 0 280px 100px;
+  margin-bottom: 0.8rem;
+  color: #3e3e3e;
 }
 
-.exploreDiv button {
+.explore-btn {
   border-style: none;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   color: white;
   padding: 6px 20px;
   border-radius: 7px;
@@ -33,56 +42,77 @@
   margin-bottom: 100px;
   transition: 0.5s ease;
   font-family: "Dosis", sans-serif;
-
-  /* font-family: "Lato", sans-serif; */
+  margin-left: 5px;
 }
 
-.exploreDiv button:hover {
-  transform: scale(1.25) perspective(1px);
+.explore-btn:hover {
+  transform: scale(1.1) perspective(1px);
   cursor: pointer;
-  background-color: gray;
+  background-color: rgb(0, 0, 0);
 }
 
-.winner {
+.line {
+  width: 23%;
+  position: relative;
+  height: 2px;
+  background-color: black;
+
+}
+
+.line:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -11px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.carousel-img {
+  height: 740px;
+  width: 510px;
+  border-radius: 400px 400px 10px 10px;
+}
+
+.background-line {
+  position: absolute;
+  height: 730px;
+  width: 530px;
+  bottom: 1rem;
+  right: 2rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.233);
+  z-index: -1;
+  border-radius: 400px 400px 4px 4px;
+}
+
+.winner-post-header {
   font-size: 70px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-align: center;
-  margin-bottom: 48px;
-  margin-top: 140px;
+
 }
 
-.hash {
+.hashtag {
   font-family: "Satisfy", cursive;
   font-size: 65px;
 }
 
-.bg {
+.gray-background {
   color: rgb(56, 55, 55);
   background-color: rgba(30, 80, 121, 0.061);
-  position: absolute;
-  top: 1155px;
-  z-index: -1;
   width: 76%;
-  height: 300px;
   font-size: 50px;
-  padding-left: 16px;
+  padding: 30px 16px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: bold;
-  padding-top: 27px;
+  position: relative;
+  margin-top: 6rem;
 }
-.imgContener {
-  width: 300px;
-  margin-bottom: 94px;
-}
-.imgContener img {
-  height: 400px;
-  margin-left: 755px;
-  transform: rotate(10deg);
-  border-radius: 8px;
-  border: 8px solid rgba(255, 255, 255, 0.507);
-  transition: 0.5s ease;
-}
-.why {
+
+.description {
   font-size: 25px;
   font-weight: lighter;
   display: block;
@@ -91,140 +121,63 @@
   letter-spacing: 0.5px;
   line-height: 1.3;
   margin-right: 400px;
-  margin-top: 10px;
-}
-.whySpan {
-  display: block;
-  padding-top: 20px;
-}
-.imgContener img:hover {
-  cursor: pointer;
-  transform: scale(1.25) perspective(1px);
 }
 
-.bgDiv {
+.img-container {
   position: absolute;
-  top: 90px;
-  left: 780px;
-}
-.bgDivImg {
-  height: 740px;
-  width: 510px;
-  border-top-right-radius: 400px;
-  border-top-left-radius: 400px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  z-index: 2;
+  right: 50px;
 }
 
-.lineInBack {
-  position: absolute;
-  height: 730px;
-  width: 530px;
-  top: 70px;
-  left: 740px;
-  border: 0.5px solid rgba(64, 64, 66, 0.233);
-  border-top-right-radius: 400px;
-  border-top-left-radius: 400px;
-  z-index: -1;
-  border-bottom-left-radius: 4px;
-}
-
-.line {
-  border-top: 1px solid #000000;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /* margin: 40px auto 0; */
-  width: 23%;
-  position: absolute;
-  top: 1010px;
-  /* margin-top: 100px; */
-}
-
-.line:after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: #000000;
-  border-radius: 5px;
-  position: absolute;
-  top: -6px;
-}
-
-.line:after {
-  right: 0;
-}
-
-.anim {
-  width: 530px;
-  margin-left: 780px;
-  margin-top: 30px;
-}
-
-.allImgss {
-  /* position: absolute;
-  top: 0;
-  left: 0%; */
-  /* top: 90px;
-  left: 780px; */
-}
-
-.homeText {
-  position: absolute;
-  top: 110px;
-}
-/* .home{
-  background-color:rgba(81, 111, 122, 0.815);
-} */
-
-.bg2 {
-  color: rgb(56, 55, 55);
-  background-color: rgba(30, 80, 121, 0.061);
-  position: absolute;
-  top: 1668px;
-  z-index: -1;
-  width: 76%;
-  height: 300px;
-  font-size: 45px;
-  text-align: right;
-  right: 0;
-  /* padding-left: 20px; */
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-weight: bold;
-  padding-top: 27px;
-  padding-right: 15px;
-}
-.imgContener2 {
-  width: 300px;
-  margin-bottom: 100px;
-}
-.imgContener2 img {
+.gray-background img {
   height: 400px;
-  margin-left: 420px;
-  transform: rotate(-8deg);
   border-radius: 8px;
   border: 8px solid rgba(255, 255, 255, 0.507);
-
   transition: 0.5s ease;
 }
-.why2 {
-  font-size: 25px;
-  font-weight: lighter;
-  display: block;
-  text-align: justify;
-  direction: rtl;
-  /* text-align: right; */
-  /* text-align: justify; */
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  letter-spacing: 0.5px;
-  line-height: 1.3;
-  margin-top: 10px;
-  margin-left: 415px;
+
+.gray-background .right img {
+  transform: rotate(10deg);
 }
-.whySpan2 {
-  display: block;
-  padding-top: 20px;
+
+.gray-background .left img {
+  transform: rotate(-10deg);
 }
-.imgContener2 img:hover {
+
+.gray-background img:hover {
   cursor: pointer;
-  transform: scale(1.25) perspective(1px);
+  transform: scale(1.15) perspective(1px);
+}
+
+.right-side {
+  float: right;
+  margin-top: 10rem;
+}
+
+.right-side span {
+  float: right;
+  margin-right: 0;
+  margin-left: 400px;
+}
+
+.right-side .img-container {
+  left: 50px;
+}
+
+
+@media screen and (max-width: 1362px) {
+  .home-header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-header-container>div:first-child {
+    width: 80%;
+    text-align: center;
+  }
+
+  .winner-container {
+    display: none;
+  }
 }

@@ -5,7 +5,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { useNavigate } from "react-router-dom";
 
-const BASE_URL = "https://project2back.herokuapp.com";
+const BASE_URL = "http://localhost:5500";
 
 const Photos = () => {
   let navigate = useNavigate();
